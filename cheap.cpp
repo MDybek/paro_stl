@@ -57,6 +57,16 @@ TEST(Cheap, TestCornerCase)
     ASSERT_EQ(expected, find_cheapest(products, numCheapest));
 }
 
+TEST(Cheap, Cheap_TestCornerCase2_Test)
+{
+    vector<Product> products { };
+
+    auto const numCheapest = 5;
+    vector<Product> expected { };
+
+    ASSERT_EQ(expected, find_cheapest(products, numCheapest));
+}
+
 int main(int ac, char ** av)
 {
     ::testing::InitGoogleTest(&ac, av);

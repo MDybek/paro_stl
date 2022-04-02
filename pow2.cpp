@@ -26,6 +26,15 @@ TEST(Pow2Test, Test)
     ASSERT_EQ(expected, actual);
 }
 
+TEST(Pow2Test, Pow2Test_Test)
+{
+    vector<long> input =    {0, 1, 2, 5, 10, 15, -3, -12, 1000};
+    vector<long> expected = {0, 1, 4, 25, 100, 225, 9, 144, 1000000};
+    auto actual = pow2(input);
+
+    ASSERT_EQ(expected, actual);
+}
+
 int main(int ac, char ** av)
 {
     ::testing::InitGoogleTest(&ac, av);
